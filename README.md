@@ -30,23 +30,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">MACD SIGNAL Notifier</h3>
 
   <p align="center">
-    project_description
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/dannyngcw/MACD-SIGNAL-Notifier">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/dannyngcw/MACD-SIGNAL-Notifier/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/dannyngcw/MACD-SIGNAL-Notifier/pulls">Request Feature</a>
   </p>
 </div>
 
@@ -64,17 +57,11 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -83,9 +70,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://t.me/macdsignalz)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+A friend asked me if I could create a telegram channel which is able to send buy and sell signals using the MACD indicator.
+I webscraped MACD values from TradingView using webdriver from selenium and BeautifulSoup, establish a connection via the telegram API to
+send the messages as shown in the screenshot. (Click on SS to see the telegram channel)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,14 +82,15 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* Jupyter Notebook via Google Colab
+<!-- * [![Next][Next.js]][Next-url] -->
+<!-- * [![React][React.js]][React-url] -->
+<!-- * [![Vue][Vue.js]][Vue-url] -->
+<!-- * [![Angular][Angular.io]][Angular-url] -->
+<!-- * [![Svelte][Svelte.dev]][Svelte-url] -->
+<!-- * [![Laravel][Laravel.com]][Laravel-url] -->
+<!-- * [![Bootstrap][Bootstrap.com]][Bootstrap-url] -->
+<!-- * [![JQuery][JQuery.com]][JQuery-url] -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,61 +99,26 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. Download the jupyter notebook in main.
+2. Run in Jupyter or Google Colab.
+3. Read through the comments and instructions in the notebook.
+4. Create your own telegram channel and input API.
+5. Lastly, toggle the settings to suit your needs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+There are 2 ways to run this project. 
+1. Either run the program on your computer using Jupyter notebook (you can use Google Colab but it has 12 hours limit unless you get premium.) or 
+2. Run it on a remote server.\
+I just used Google Colab to test it and re run it when the 12 hour session ends.
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+_For creating telegram channel and sending messages, please refer to this [Medium Article](https://medium.com/javarevisited/sending-a-message-to-a-telegram-channel-the-easy-way-eb0a0b32968)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -172,6 +127,8 @@ Contributions are what make the open source community such an amazing place to l
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
+
+Feel free to download it and expand it as your own project.(Tag me in it, I would love to see it)
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -195,20 +152,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Danny - dngcw@hotmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
+Project Link: [https://github.com/dannyngcw/MACD-SIGNAL-Notifier](https://github.com/dannyngcw/MACD-SIGNAL-Notifier)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -216,18 +162,18 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/dannyngcw/MACD-SIGNAL-Notifier.svg?style=for-the-badge
+[contributors-url]: https://github.com/dannyngcw/MACD-SIGNAL-Notifier/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dannyngcw/MACD-SIGNAL-Notifier.svg?style=for-the-badge
+[forks-url]: https://github.com/dannyngcw/MACD-SIGNAL-Notifier/network/members
+[stars-shield]: https://img.shields.io/github/stars/dannyngcw/MACD-SIGNAL-Notifier.svg?style=for-the-badge
+[stars-url]: https://github.com/dannyngcw/MACD-SIGNAL-Notifier/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dannyngcw/MACD-SIGNAL-Notifier.svg?style=for-the-badge
+[issues-url]: https://github.com/dannyngcw/MACD-SIGNAL-Notifier/issues
+[license-shield]: https://img.shields.io/github/license/dannyngcw/MACD-SIGNAL-Notifier.svg?style=for-the-badge
+[license-url]: https://github.com/dannyngcw/MACD-SIGNAL-Notifier/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/dannyngcw
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
